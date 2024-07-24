@@ -11,18 +11,38 @@
             width: 100%;
             border-collapse: collapse;
         }
-        td, th {
+        th, td {
             border: 1px solid #000;
-            padding: 8px;
-            text-align: left;
+            padding: 5px;
+            text-align: center;
+        }
+        .header {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
         }
     </style>
-    <title>Template 1</title>
+    <title>Акт сверки</title>
 </head>
 <body>
-    <h2>Акт сверки</h2>
+    <div class="header">
+        <h2>Акт сверки</h2>
+        <p>ТекстЗаголовка</p>
+    </div>
     <table>
         <tr>
+            <td colspan="2">
+                По данным ТОО "Рога и копыта", KZT
+            </td>
+            <td colspan="2">
+                По данным ТОО "Какао-Какао", KZT
+            </td>
+        </tr>
+        <tr>
+            <th>Дата</th>
+            <th>Документ</th>
+            <th>Дебет</th>
+            <th>Кредит</th>
             <th>Дата</th>
             <th>Документ</th>
             <th>Дебет</th>
@@ -33,13 +53,79 @@
             <td>ААА</td>
             <td>10 000,00</td>
             <td>0,00</td>
-        </tr>
-        <tr>
             <td>01.01.2023</td>
             <td>БББ</td>
             <td>5 000,00</td>
             <td>0,00</td>
         </tr>
+        <tr>
+            <td>01.01.2023</td>
+            <td>Договор А-123/4-56</td>
+            <td>0,00</td>
+            <td>0,00</td>
+            <td>01.01.2023</td>
+            <td>Договор А-123/4-56</td>
+            <td>0,00</td>
+            <td>0,00</td>
+        </tr>
+        <tr>
+            <td colspan="2">Сальдо начальное</td>
+            <td>0,00</td>
+            <td>0,00</td>
+            <td colspan="2">Сальдо начальное</td>
+            <td>0,00</td>
+            <td>0,00</td>
+        </tr>
+        <tr>
+            <td colspan="2">Обороты по договору</td>
+            <td>0,00</td>
+            <td>0,00</td>
+            <td colspan="2">Обороты по договору</td>
+            <td>0,00</td>
+            <td>0,00</td>
+        </tr>
+        <tr>
+            <td colspan="2">Сальдо конечное</td>
+            <td>0,00</td>
+            <td>0,00</td>
+            <td colspan="2">Сальдо конечное</td>
+            <td>0,00</td>
+            <td>0,00</td>
+        </tr>
+        <tr>
+            <td colspan="4">Обороты за период</td>
+            <td colspan="4">Обороты за период</td>
+        </tr>
+        <tr>
+            <td colspan="2">сальдо на конец</td>
+            <td>0,00</td>
+            <td>0,00</td>
+            <td colspan="2">сальдо на конец</td>
+            <td>0,00</td>
+            <td>0,00</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <p>По данным ТОО "Рога и копыта"</p>
+                <p><strong>Результаты сверки</strong></p>
+                <p>От ТОО "Рога и копыта"</p>
+                <p>Должность</p>
+                <p>ФИО Представителя</p>
+                <p>М.П.</p>
+            </td>
+            <td>
+                <p>По данным ТОО "Какао-Какао"</p>
+                <p><strong>Результаты сверки</strong></p>
+                <p>От ТОО "Какао-Какао"</p>
+                <p>Должность</p>
+                <p>ФИО Представителя</p>
+                <p>М.П.</p>
+            </td>
+        </tr>
     </table>
 </body>
 </html>
+
